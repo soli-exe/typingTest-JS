@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typing Test</title>
+    <link rel="stylesheet" href="/assets/css/typing-test.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1 class="main-title">Test your typing speed here</h1>
+      <div class="state-group">
+        <section class="errors-sec">
+          <strong class="title" id="errors">Errors</strong>
+          <strong class="error-ini">0</strong>
+        </section>
+        <section class="timer-sec">
+          <strong class="title" id="timer">Time</strong>
+          <strong class="timer-ini">0s</strong>
+        </section>
+        <section class="accuracy-sec">
+          <strong class="title" id="acc">Accuracy</strong>
+          <strong class="acc-ini">100%</strong>
+        </section>
+      </div>
+      <div class="typing-section">
+        <article class="txt-content">
+          <strong class="loading">Loading...</strong>
+        </article>
+        <textarea
+          class="txt-input"
+          placeholder="Start typing here..."
+          id="textInputId"
+          onpaste="return false"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="btn-area">
+        <button class="btn" id="reset-btn">Reset</button>
+        <button class="btn" id="start-btn">Start</button>
+      </div>
+    </main>
+    <script src="./assets/js/typing-test.js"></script>
+  </body>
+</html>
